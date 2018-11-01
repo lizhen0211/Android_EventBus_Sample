@@ -17,4 +17,9 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, SimpleDemoActivity.class);
         startActivity(intent);
     }
+
+    public void onThreadModelClick(View view) {
+        Intent intent = new Intent(this, ThreadModeActivity.class);
+        startActivity(intent);
+    }
 }

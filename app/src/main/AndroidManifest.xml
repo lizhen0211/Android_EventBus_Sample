@@ -19,6 +19,9 @@
         <activity
             android:name=".SimpleDemoActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".ThreadModeActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
