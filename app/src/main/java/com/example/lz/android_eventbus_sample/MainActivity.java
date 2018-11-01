@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import org.greenrobot.eventbus.EventBus;
+
 public class MainActivity extends Activity {
 
     @Override
@@ -22,4 +24,11 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, ThreadModeActivity.class);
         startActivity(intent);
     }
+
+    public void onStickyEventClick(View view) {
+        EventBus.getDefault().postSticky(new MessageEvent("Hello everyone!"));
+        Intent intent = new Intent(this, StickyEventsActivity.class);
+        startActivity(intent);
+    }
+
 }
